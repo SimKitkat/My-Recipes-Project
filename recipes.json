@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Fluffy Pancakes",
+    "image": "https://via.placeholder.com/300x200.png?text=Pancakes",
+    "ingredients": [
+      "1 cup flour",
+      "2 tbsp sugar",
+      "1 tbsp baking powder",
+      "1 cup milk",
+      "1 egg",
+      "2 tbsp melted butter"
+    ],
+    "instructions": [
+      "Mix all dry ingredients together.",
+      "Add milk, egg, and melted butter. Whisk until smooth.",
+      "Heat a pan and pour 1/4 cup of batter.",
+      "Flip when bubbles form. Cook until golden brown."
+    ]
+  },
+  {
+    "title": "Strawberry Smoothie",
+    "image": "https://via.placeholder.com/300x200.png?text=Smoothie",
+    "ingredients": [
+      "1 cup strawberries",
+      "1 banana",
+      "1/2 cup yogurt",
+      "1/2 cup milk",
+      "1 tbsp honey"
+    ],
+    "instructions": [
+      "Combine all ingredients in a blender.",
+      "Blend until smooth.",
+      "Serve chilled with ice cubes if desired."
+    ]
+  }
+]

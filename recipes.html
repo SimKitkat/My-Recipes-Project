@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Kaushan+Script&display=swap");
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #ffe6f2;
+      color: #4d004d;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background-color: #ff66b2;
+      color: #fff;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      font-family: "Kaushan Script", cursive;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .recipe-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .recipe-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 3px 3px 10px rgba(255, 105, 180, 0.3);
+    }
+
+    .recipe-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #ff66b2;
+      color: #fff;
+    }
+  </style>
+  <body>
+    <header>
+      <div class="logo">🍓 Sweet Recipes</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Recipes</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="recipe-container" class="recipe-grid"></section>
+
+    <footer>
+      <p>Made with 💖 by Bestie & You</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

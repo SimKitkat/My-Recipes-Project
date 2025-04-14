@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Simone Designs</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #ffe6f2;
+        color: #4d004d;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background-color: #ff66b2;
+        color: #fff;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        font-family: "Kaushan Script", cursive;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      input,
+      textarea {
+        padding: 15px;
+        margin-bottom: 20px;
+        background-color: #ff33a8;
+        border: 1px solid #333;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 16px;
+      }
+      button {
+        background-color: #ff69b4;
+        color: #fff;
+        border: none;
+        padding: 15px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #ff85c1;
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #ff66b2;
+        color: #fff;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">🍓 Contact</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipe.html">Recipes</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>Let's Work Together</h1>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your Full Name" required />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email Address"
+          required
+        />
+        <textarea
+          name="message"
+          rows="6"
+          placeholder="Tell me about your project..."
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>© 2025 Simone Designs. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
