@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recipe Card</title>
+    <style>
+      body {
+        background: #ffe6f0;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .card {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 30px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        color: #ff4da6;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .dish-name {
+        margin-bottom: 20px;
+      }
+
+      .dish-name label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 600;
+        color: #ff3399;
+      }
+
+      .dish-name input {
+        width: 100%;
+        padding: 12px;
+        border: 2px dotted #ff99cc;
+        border-radius: 30px;
+        background: #ffe6f0;
+        font-size: 16px;
+      }
+
+      .info-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-bottom: 30px;
+      }
+
+      .info-field label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 600;
+        color: #ff3399;
+      }
+
+      .info-field input {
+        width: 100%;
+        padding: 12px;
+        border: 2px dotted #ff99cc;
+        border-radius: 30px;
+        background: #ffe6f0;
+        font-size: 16px;
+      }
+
+      .ingredients-directions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin-top: 20px;
+      }
+
+      .section label {
+        font-weight: 700;
+        font-size: 18px;
+        color: #cc0066;
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      .lines {
+        border-top: 2px dotted #ff99cc;
+        height: 200px;
+        background: repeating-linear-gradient(
+          to bottom,
+          transparent,
+          transparent 20px,
+          #ff99cc 20px,
+          #ff99cc 21px
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <header class="card-header">
+        <h1>Recipe</h1>
+        <h1>Card</h1>
+      </header>
+
+      <div class="dish-name">
+        <label>DISH:</label>
+        <input type="text" placeholder="Enter dish name" />
+      </div>
+
+      <div class="info-grid">
+        <div class="info-field">
+          <label>PREP TIME:</label>
+          <input type="text" />
+        </div>
+        <div class="info-field">
+          <label>COOK TIME:</label>
+          <input type="text" />
+        </div>
+        <div class="info-field">
+          <label>SERVES:</label>
+          <input type="text" />
+        </div>
+        <div class="info-field">
+          <label>OVEN TEMPERATURE:</label>
+          <input type="text" />
+        </div>
+      </div>
+
+      <div class="ingredients-directions">
+        <div class="section">
+          <label>INGREDIENTS:</label>
+          <div class="lines"></div>
+        </div>
+        <div class="section">
+          <label>DIRECTIONS:</label>
+          <div class="lines"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
